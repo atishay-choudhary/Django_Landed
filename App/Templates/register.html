@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %}
+
+    <title>Register Page</title>
+    {% endblock title %} {% block css %}
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    {% endblock css %}
+  </head>
+
+  <body>
+    {% block content %}
+    <h1><i>Welcomr to the Registration page</i></h1>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="text-center">Register Account</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <!-- Username Input -->
+                <div class="mb-3">
+                  <label for="inputUsername" class="form-label">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputUsername"
+                    placeholder="Enter username"
+                  />
+                </div>
+
+                <!-- Email Input -->
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="name@example.com"
+                  />
+                </div>
+
+                <!-- Password Input -->
+                <div class="mb-3">
+                  <label for="inputPassword" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword"
+                    placeholder="Password"
+                  />
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-100">
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS CDN link (optional) -->
+    <script
+      src="https://cdn.jsdelivr.net"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    {% endblock content %}
+  </body>
+</html>

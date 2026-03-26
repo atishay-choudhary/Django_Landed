@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %}
+
+    <title>About Page</title>
+    {% endblock title %} {% block css %}
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    {% endblock css %}
+  </head>
+
+  <body>
+    {% block content %}
+    <h1 class="mt-4"><i>Welcome to the About page</i></h1>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="card shadow">
+            <!-- 🔵 Blue Header -->
+            <div class="card-header bg-primary text-white text-center">
+              <h4 class="mb-0">About Me</h4>
+            </div>
+
+            <div class="card-body">
+              <p>
+                I am a cybersecurity enthusiast and Computer Science student at
+                Jagran Lakecity University, focused on offensive security and
+                real-world problem solving.
+              </p>
+
+              <p>
+                My work revolves around identifying vulnerabilities, analyzing
+                threats, and building practical solutions to strengthen system
+                security.
+              </p>
+
+              <hr />
+
+              <h5 class="text-primary">Key Skills</h5>
+              <ul>
+                <li>Web Penetration Testing & Exploitation</li>
+                <li>Vulnerability Assessment</li>
+                <li>Networking & OSI Model</li>
+                <li>Python for Security Automation</li>
+                <li>Linux (Debian, Red Hat)</li>
+              </ul>
+
+              <hr />
+
+              <h5 class="text-primary">Projects & Research</h5>
+              <ul>
+                <li>Voice Authentication System using SVM</li>
+                <li>Research Paper presented at MANIT</li>
+              </ul>
+
+              <hr />
+
+              <!-- 🔵 Call to Action Button -->
+              <div class="text-center">
+                <a href="/contact" class="btn btn-primary"> Contact Me </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endblock content %}
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %}
+
+    <title>Landing Page</title>
+    {% endblock title %} {% block css %}
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    {% endblock css %}
+  </head>
+
+  <body>
+    {% block content %}
+    <h1><i>Welcome to the Landing page</i></h1>
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        <!-- Text Section -->
+        <div class="col-md-7">
+          <h1 class="display-4">Atishay Choudhary</h1>
+          <p class="lead">
+            Cybersecurity Enthusiast | Ethical Hacker | CTF Player
+          </p>
+
+          <p>
+            Focused on offensive security, vulnerability assessment, and
+            building secure systems. Passionate about breaking things to make
+            them stronger.
+          </p>
+
+          <a href="/contact" class="btn btn-primary mt-3"> Get In Touch </a>
+        </div>
+      </div>
+    </div>
+    {% endblock content %}
+  </body>
+</html>
